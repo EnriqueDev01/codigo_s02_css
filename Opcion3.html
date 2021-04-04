@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reto Semana 2 - Opcion 3</title>
+    <style>
+        main{
+            display: flex;
+            justify-content: center;
+        }
+        section{
+            width: 380px;
+            background-color: rgb(200, 230, 240, 0.7);
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+            border-radius: 4px;
+            padding-bottom: 20px;              
+        }
+        .title_form{
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;              
+        }
+        label{
+            display: block;
+            font-weight: bold;
+            margin-top: 12px;
+            font-size: 12px;
+            color: rgb(70, 70, 70);
+            padding-bottom: 4px;            
+        }
+        .border_input_data{
+            border: 2px solid lightgray;
+            border-radius: 4px;
+        }
+        .arial_14{
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .padding_left_10{
+            padding-left: 10px;
+        }
+        .input_data{
+            width: 340px;
+            height: 36px;                                    
+        }        
+        textarea{
+            width: 340px;
+            height: 160px;                      
+        }
+        .input_boton{
+            height: 40px;
+            width: 100px;
+            background-color: rgb(60, 180, 180);
+            color: white;
+            font-weight: bolder;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            margin-top: 12px;            
+        }
+        .boton_center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="./index.html">Inicio</a></p>
+    <main>
+        <section>
+            <form action="">
+                <p class="title_form">Contact Form</p>
+                <label for="firstname" class="padding_left_10">First Name</label>
+                <input 
+                    type="text" 
+                    id="firstname" 
+                    placeholder="Jhon" 
+                    class="input_data border_input_data arial_14 padding_left_10"
+                    required
+                    minlength="7"
+                >
+                <br>
+                <label for="lastname" class="padding_left_10">Last Name</label>
+                <input 
+                    type="text" 
+                    id="lastname" 
+                    placeholder="Doe" 
+                    class="input_data border_input_data arial_14 padding_left_10"
+                    required
+                    minlength="7"
+                >
+                <br>
+                <label for="email" class="padding_left_10">Email</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="you@domain.com" 
+                    class="input_data border_input_data arial_14 padding_left_10"
+                    required
+                    pattern="[A-Za-z0-9]+@[A-Za-z0-9]+.[A-Za-z]{2,4}.?[A-Za-z]{0,2}"
+                >
+                <br>
+                <label for="message" class="padding_left_10">Message</label>
+                <textarea 
+                    id="message" 
+                    placeholder="Enter your message here ..." 
+                    class="border_input_data arial_14 padding_left_10"
+                    required="required"
+                    minlength="20"
+                    maxlength="140"
+                >
+                </textarea>
+                <br>
+                <div class="boton_center"> 
+                    <input 
+                        type="submit" 
+                        value="Submit"
+                        class="input_boton"
+                    >
+                </div>                
+            </form>
+        </section>
+    </main>
+</body>
+</html>

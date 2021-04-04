@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">    
+    <title>Reto Semana 2 - Opcion 1</title>
+    <style>
+        main{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;            
+        }
+        .title_form{
+            margin: 12px;
+            color: rgb(100, 100, 100);
+        }
+        input{
+            margin: 6px;
+        }
+        .input_text{
+            height: 46px;
+            width: 300px;
+            padding-left: 16px;
+            border: 2px solid lightgray;
+            border-radius: 4px;            
+        }
+        .input_text::placeholder{
+            font-weight: bold;
+            color: gray;
+            font-size: 14px;
+        }
+        .input_boton{
+            height: 40px;
+            width: 120px;
+            background-color: rgb(45, 160, 95);
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="./index.html">Inicio</a></p>
+    <main>
+        <section>
+            <p class="title_form">CREATE YOUR ACCOUNT</p>
+            <p class="title_form">This is step 1</p>
+        </section>
+        <section>
+            <form action="">                                           
+                <input 
+                    class="input_text" 
+                    type="email" 
+                    placeholder="Email"
+                    required
+                    pattern="[A-Za-z0-9]+@[A-Za-z0-9]+.[A-Za-z]{2,4}.?[A-Za-z]{0,2}"
+                >
+                <br>
+                <input 
+                    class="input_text" 
+                    type="password" 
+                    placeholder="Password"
+                    required
+                >
+                <br>
+                <input 
+                    class="input_text" 
+                    type="password" 
+                    placeholder="Confirm Password"
+                    required
+                >
+                <br>
+                <input 
+                    class="input_boton" 
+                    type="submit"
+                    value="Next"
+                >
+            </form>
+        </section>    
+    </main>   
+</body>
+</html>
